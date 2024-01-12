@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+
+    <style>
+        body {
+            background-color: #fff;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .logo {
+            height: 27px;
+            width: 127px;
+            margin-left: 202px;
+            margin-top: 14px;
+            font-size: 30px;
+            cursor: pointer;
+
+        }
+
+        .container span {
+            display: block;
+            align-items: center;
+            width: 200px;
+            height: 53pxpx;
+            border-top: 2px solid rgb(232, 232, 232);
+            border-left: 2px solid rgb(232, 232, 232);
+            border-bottom: 2px solid rgb(232, 232, 232);
+            border-right: 0px solid rgb(232, 232, 232);
+            border-radius: 8px;
+            border-end-end-radius: 0px;
+            border-top-right-radius: 0px;
+            font-size: 17px;
+            font-style: 100%;
+            font-weight: 400;
+
+            padding-left: 35px;
+            padding-top: 17px;
+            margin-left: 23px;
+            margin-right: 10px;
+            color: rgb(138, 138, 138);
+            cursor: text;
+            margin-right: 0px;
+            box-shadow: 1px 1px 10px rgb(232, 232, 232);
+
+        }
+
+        .container input {
+            width: 460px;
+            height: 53px;
+            border-radius: 8px;
+            border-top: 2px solid rgb(232, 232, 232);
+            border-right: 2px solid rgb(232, 232, 232);
+            border-bottom: 2px solid rgb(232, 232, 232);
+            border-left: 0px solid rgb(232, 232, 232);
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            margin-left: 0px;
+            font-size: 17px;
+            font-style: 100%;
+            font-weight: 400;
+            color: rgb(138, 138, 138);
+            cursor: text;
+            box-shadow: 1px 1px 10px rgb(232, 232, 232);
+        }
+
+        .id {
+            height: 40px;
+            width: 40px;
+            margin-left: 120px;
+            margin-top: 7px;
+        }
+
+        .container p {
+            margin-left: 5px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .loco {
+            height: 23px;
+            width: 20px;
+            position: absolute;
+            top: 22px;
+            left: 370px;
+        }
+
+        .phle {
+            height: 10px;
+            width: 13px;
+            position: absolute;
+            top: 32px;
+            left: 540px;
+            background-color: transparent;
+        }
+
+        .baad {
+            height: 10px;
+            width: 13px;
+            position: absolute;
+            top: 32px;
+            left: 1310px;
+            background-color: transparent;
+
+        }
+
+        .container2 {
+            display: flex;
+            background-color: #fff;
+            margin-top: 0px;
+        }
+
+        .fimg {
+            background-color: rgb(252, 238, 192);
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+            margin-left: 221px;
+            margin-top: 28px;
+
+        }
+
+        #fimg {
+            height: 30px;
+            width: 30px;
+            padding-left: 15px;
+            padding-top: 15px;
+        }
+
+        .container2 p {
+            font-size: 23px;
+            font-weight: 600;
+            color: rgb(223, 71, 71);
+            margin-left: 7px;
+            margin-top: 45px;
+            cursor: pointer;
+
+        }
+
+        a.active {
+            background-color: rgb(29, 20, 20);
+            color: rgb(224, 153, 47);
+
+        }
+
+
+        .simg {
+            background-color: rgb(242, 241, 241);
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+            margin-left: 38px;
+            margin-top: 28px;
+
+        }
+
+        #simg {
+            height: 30px;
+            width: 30px;
+            padding-left: 12px;
+            padding-top: 12px;
+        }
+
+        .conatiner3 {
+            display: flex;
+            background-color: #fff;
+            height: 200px;
+            width: 100%;
+        }
+
+        .but {
+            width: 95px;
+            height: 37px;
+            background-color: white;
+            border-color: rgb(228, 226, 226);
+            font-size: 15px;
+            color: rgb(156, 156, 156);
+            box-shadow: 0px white;
+            border-radius: 8px;
+            margin-left: 10px;
+            box-shadow: none;
+        }
+
+        .ll {
+            margin-left: 190px;
+            margin-top: 40px;
+        }
+
+        .bb {
+            display: flex;
+            height: 150px;
+            width: 150px;
+            margin-left: 156px;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+
+        .container4 {
+            background-color: rgb(248, 248, 248);
+            height: 330px;
+            margin-top: 5px;
+        }
+
+        .container4 p {
+            font-size: 30px;
+            margin-left: 200px;
+            padding-top: 25px;
+            font-weight: 600;
+        }
+
+        .container4 img {
+            margin-left: 40px;
+        }
+
+        .name {
+            position: absolute;
+            display: flex;
+            top: 520px;
+            margin-left: 100px;
+        }
+
+        .name p {
+            margin-left: 140px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .container5 {
+            background-color: #fff;
+            height: 330px;
+        }
+
+        .container5 p {
+            font-size: 30px;
+            margin-left: 200px;
+            padding-top: 25px;
+            font-weight: 600;
+        }
+
+        .container4 img {
+            margin-left: 40px;
+        }
+
+        .cc {
+            display: flex;
+            margin-left: 156px;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+
+        .cc img {
+            height: 150px;
+            width: 150px;
+            border-radius: 120px;
+            box-shadow: 2px 2px 10px rgb(199, 199, 199);
+            margin-left: 40px;
+
+        }
+
+        .name2 {
+            position: absolute;
+            display: flex;
+            top: 880px;
+            margin-left: 106px;
+            margin-top: 0px;
+        }
+
+        .name2 p {
+            margin-left: 98px;
+            font-size: 20px;
+            font-weight: 300;
+            cursor: pointer;
+        }
+
+        .name3 {
+            position: absolute;
+            display: flex;
+            top: 910px;
+            margin-left: 100px;
+        }
+
+        .name3 p {
+            margin-left: 150px;
+            font-size: 16px;
+            font-weight: 300;
+            cursor: pointer;
+        }
+
+        .container6 {
+            background-color: #fff;
+            height: 1000px;
+            width: 1282px;
+            margin-left: 210px;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .boximg img {
+            height: 248px;
+            width: 325px;
+            margin-right: 0px;
+            margin-left: 0px;
+
+        }
+
+        .boximg {
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+            padding-bottom: 40px;
+            padding-right: 0px;
+            padding-left: 0px;
+            border: 18.39px solid white;
+            margin-right: 15px;
+            box-shadow: 2px 2px 10px rgb(193, 192, 192);
+            max-width: 325px;
+            max-height: 380px;
+        }
+
+        .boximg span {
+            font-size: 17px;
+            color: rgb(156, 156, 156);
+            font-weight: 600;
+            display: block;
+            padding-bottom: 10px;
+        }
+
+        .hel {
+            font-size: 1px;
+            color: rgb(156, 156, 156);
+            font-weight: 400;
+            display: block;
+            padding-top: 50px;
+        }
+
+
+        .container6 p {
+            font-size: 30px;
+            margin-left: 0px;
+            padding-top: 0px;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: rgb(248, 248, 248);
+        }
+
+        .foot {
+            display: flex;
+            height: 350px;
+            width: 100%;
+            background-color: rgb(248, 248, 248);
+            color: rgb(0, 0, 0);
+            margin-top: 00px;
+            padding-top: 200px;
+            padding-left: 180px;
+        }
+
+        .foot ul {
+            list-style: none;
+            padding-right: 80px;
+        }
+
+        .foot li {
+            padding-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .foot img {
+            height: 27px;
+            width: 127px;
+            display: block;
+            margin-right: 700px;
+            margin-left: 40px;
+        }
+
+        .foot input {
+            display: block;
+            height: 30px;
+            width: 100px;
+            background-color: rgb(248, 248, 248);
+            border-color: grey;
+        }
+
+        .fh {
+            display: flex;
+            position: absolute;
+            top: 2900px;
+        }
+
+        .pf {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(252, 252, 252);
+            margin-bottom: 0px;
+            margin-top: 500px;
+            height: 300px;
+            max-width: 375;
+        }
+
+        .pf p {
+            font-size: 30px;
+            margin-left: 0px;
+            padding-top: 0px;
+            font-weight: 600;
+        }
+
+
+        .pf select {
+            height: 70px;
+            width: 125;
+            margin-bottom: 20px;
+            border: 2px solid rgb(240, 240, 240);
+        }
+
+        .so {
+            background-color: transparent;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 3040px;
+            left: 1100px;
+        }
+
+        .small {
+            display: flex;
+            flex-direction: row;   
+        }
+
+        .small img{
+            height: 27px;
+            width: 27px;
+            margin-left: 8px;
+        }
+
+        .big {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .big img{
+            width: 137px;
+            height: 40px;
+            margin-bottom: 0px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="error"
+                class="logo">
+
+            <span> Naini prayagraj</span>
+
+            <input type="text" placeholder="|&nbsp &nbsp &nbsp &nbsp &nbsp Search For a Restrorent, Cuisine or a Dish ">
+            <img src="https://b.zmtcdn.com/web/assets/2267aec184e096c98c46a1565a5563661664945464.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A"
+                alt="error" class="id">
+            <p>Shikhar</p>
+        </div> <img src="https://www.nicepng.com/png/full/431-4318534_location-map-pin-pink6-location-icon-png-pink.png"
+            alt="error" class="loco">
+        <img src="data:image/png;base64,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"
+            alt="" class="phle">
+        <img src="data:image/png;base64,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"
+            alt="" class="baad">
+    </header>
+
+
+    <div class="container2">
+        <div class="fimg">
+            <img src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp"
+                alt="" id="fimg">
+        </div>
+
+        <a href="">
+            <p>Delivery</p>
+        </a>
+        <div class="simg">
+            <img src="https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png?output-format=webp"
+                alt="" id="simg">
+        </div>
+        <p>Dining Out</p>
+    </div>
+
+    <div class="container3">
+        <div class="ll">
+            <input type="button" value="Filter" class="but">
+            <input type="button" value="Rating: 4.0+" class="but">
+            <input type="button" value="Cuisine" class="but">
+        </div>
+    </div>
+
+
+    <div class="container4">
+        <p>Eat what ever makes you happy</p>
+        <div class="bb">
+            <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt=""
+                style="border-radius: 120px;">
+            <img src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png" alt="">
+            <img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" alt="">
+            <img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png" alt="">
+            <img src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png" alt=""
+                style="border-radius: 120px;">
+            <img src="https://b.zmtcdn.com/data/dish_images/e44c42ff4b60b025225c8691ef9735b11635781903.png" alt="">
+        </div>
+    </div>
+    <div class="name">
+        <p>Pizza</p>
+        <p>Burger</p>
+        <p>Biryani</p>
+        <p>Cake</p>
+        <p>Chiken</p>
+        <p>Dosa</p>
+    </div>
+
+    <div class="container5">
+        <p>Top brands for you</p>
+        <div class="cc">
+            <img src="https://b.zmtcdn.com/data/brand_creatives/logos/46f79aeb5831e17a27c276e48adef38c_1643903796.png?output-format=webp"
+                alt="error">
+            <img src="https://b.zmtcdn.com/data/brand_creatives/logos/790ca481c905428c897c98fe972f20a6_1643610125.png?output-format=webp"
+                alt="error">
+            <img src="https://b.zmtcdn.com/data/brand_creatives/logos/466f8fc74274145f3b21795c3d21816d_1589432182.png?output-format=webp"
+                alt="error">
+            <img src="https://b.zmtcdn.com/data/brand_creatives/logos/30cee40f6da0477be2395a09ddc1adf8_1664003388.png?output-format=webp"
+                alt="error">
+            <img src="https://b.zmtcdn.com/data/brand_creatives/logos/944f21f54ee4f06d9a69ecccc8605f24_1679513469.png?output-format=webp"
+                alt="error">
+        </div>
+    </div>
+    <div class="name2">
+        <p>Hot Pizza Ace</p>
+        <p>Hot Pizza King</p>
+        <p>KFC</p>
+        <p>Downtown Pizza</p>
+        <p>El Dorado Pizza</p>
+    </div>
+    <div class="name3">
+        <p>42 min</p>
+        <p>45 min</p>
+        <p>35 min</p>
+        <p>44 min</p>
+        <p>43 min</p>
+    </div>
+
+    <div class="container6">
+        <p>Best Food in Allahabad</p>
+        <div class="flexbox">
+            <div class="boximg">
+                <img src="https://b.zmtcdn.com/data/pictures/3/18984483/dd1c9b1610e84c14f0a5014fd593985f_o2_featured_v2.jpg?output-format=webp"
+                    alt="">
+                <span>Shri Gupta Masala Dosa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.9 </span>
+                <span> Street Food, Chinese, Sou..</span>
+                <span class="hel">Follows all Max Safety measures to ensure your food is safe</span>
+            </div>
+            <div class="boximg">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/4/19482614/6435062d3b3a06ab8538ba820d78da2c_o2_featured_v2.jpg?output-format=webp"
+                    alt="">
+                <span>Shri Gupta Masala Dosa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.9 </span>
+                <span> Street Food, Chinese, Sou..</span>
+                <span class="hel">Follows all Max Safety measures to ensure your food is safe</span>
+            </div>
+            <div class="boximg">
+                <img src="https://b.zmtcdn.com/data/pictures/2/19732492/d9c1df8a9e193d69a6b2959ee3e656c7_o2_featured_v2.jpg?output-format=webp"
+                    alt="">
+                <span>Shri Gupta Masala Dosa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.9 </span>
+                <span> Street Food, Chinese, Sou..</span>
+                <span class="hel">Follows all Max Safety measures to ensure your food is safe</span>
+            </div>
+            <div class="boximg">
+                <img src="https://b.zmtcdn.com/data/pictures/1/18938981/dd9e55404c4259174121d4fec0977a8d_o2_featured_v2.jpg?output-format=webp"
+                    alt="">
+                <span>Shri Gupta Masala Dosa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.9 </span>
+                <span> Street Food, Chinese, Sou..</span>
+                <span class="hel">Follows all Max Safety measures to ensure your food is safe</span>
+            </div>
+            <div class="boximg">
+                <img src="https://b.zmtcdn.com/data/pictures/0/2400600/0b10a4572d5fd29536308ef11d417b5e_o2_featured_v2.jpg?output-format=webp"
+                    alt="">
+                <span>Shri Gupta Masala Dosa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.9 </span>
+                <span> Street Food, Chinese, Sou..</span>
+                <span class="hel">Follows all Max Safety measures to ensure your food is safe</span>
+            </div>
+            <div class="boximg">
+                <img src="https://b.zmtcdn.com/data/pictures/2/19535272/df54b7b00c27a5f82bf27cdc93dfdf2e_o2_featured_v2.jpg?output-format=webp"
+                    alt="">
+                <span>Shri Gupta Masala Dosa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.9 </span>
+                <span> Street Food, Chinese, Sou..</span>
+                <span class="hel">Follows all Max Safety measures to ensure your food is safe</span>
+            </div>
+            <div class="boximg">
+                <img src="https://b.zmtcdn.com/data/pictures/8/2400168/e373ab0733064ce30ea8fe86c0a4a8be_o2_featured_v2.jpg?output-format=webp"
+                    alt="">
+                <span>Shri Gupta Masala Dosa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.9 </span>
+                <span> Street Food, Chinese, Sou..</span>
+                <span class="hel">Follows all Max Safety measures to ensure your food is safe</span>
+            </div>
+            <div class="boximg">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/2/2400602/1217e4f75e01a3e63e3a9fb4ef0a18c5_o2_featured_v2.jpg"
+                    alt="">
+                <span>Shri Gupta Masala Dosa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.9 </span>
+                <span> Street Food, Chinese, Sou..</span>
+                <span class="hel">Follows all Max Safety measures to ensure your food is safe</span>
+            </div>
+            <div class="boximg">
+                <img src="https://b.zmtcdn.com/data/pictures/3/2400403/851f486e39a1bc9fd82719cccfe440fd_o2_featured_v2.jpg"
+                    alt="">
+                <span>Shri Gupta Masala Dosa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.9 </span>
+                <span> Street Food, Chinese, Sou..</span>
+                <span class="hel">Follows all Max Safety measures to ensure your food is safe</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="pf" style="width: 1120px; margin-left: 200px; ">
+        <p>Explore options near me</p>
+        <select name="Popular cuisines near me" id="Popular cuisines near me">
+            <option value="a">Popular cuisines near me</option>
+            <option value="a">one</option>
+            <option value="a">one</option>
+        </select>
+        <select name="Popular restaurant types near me" id="">
+            <option value="a">Popular restaurant types near me</option>
+            <option value="a">one</option>
+            <option value="a">one</option>
+        </select>
+        <select name="Cities We Deliver To" id="">
+            <option value="a">Cities We Deliver To</option>
+            <option value="a">one</option>
+            <option value="a">one</option>
+        </select>
+    </div>
+
+
+    <footer style="border-top: 2px solid rgb(237, 236, 236);">
+        <div class="foot">
+            <div class="fh">
+                <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="">
+                <br><br>
+                <input type="button" value="INDIA" style="margin-right: 30px;">
+                <input type="button" value="ENGLISH">
+            </div>
+            <ul>
+                <li style="font-size: 17; font-weight: bold;">About Zomato</li>
+                <li>Who We Are</li>
+                <li> Blog</li>
+                <li>Work With Us</li>
+                <li>Investor Relations</li>
+                <li>Report Fraud</li>
+                <li>Contact Us</li>
+            </ul>
+            <ul>
+                <li style="font-size: 17; font-weight: bold;">Zomaverse</li>
+                <li>Zomato</li>
+                <li> Blinkit</li>
+                <li>Feeding India</li>
+                <li>Hyperpure</li>
+                <li>Zomaland</li>
+            </ul>
+            <ul>
+                <li style="font-size: 17; font-weight: bold;">For Restrorents</li>
+                <li>Partner With Us</li>
+                <li> Apps For You Apps For You</li>
+                <li style="font-size: 17; font-weight: bold;">FOR ENTERPRISES</li>
+                <li> Zomato For Enterprise</li>
+            </ul>
+            <ul>
+                <li style="font-size: 17; font-weight: bold;">Learn more</li>
+                <li>Privacy</li>
+                <li>Security</li>
+                <li>Terms</li>
+                <li>Sitemap</li>
+            </ul>
+            <ul>
+                <li style="font-size: 17; font-weight: bold;">Social Links</li>
+            </ul>
+        </div>
+        <hr>
+        <p style="padding-left: 200px;">By continuing past this page, you agree to our Terms of Service, Cookie Policy,
+            Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008
+            <br>-2023 © Zomato™ Ltd. All rights reserved.
+        </p>
+    </footer>
+
+    <div class="so">
+        <div class="small">
+            <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_linked_in-64.png"
+                alt="">
+            <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-64.png"
+                alt="">
+            <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-64.png"
+                alt="">
+            <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media_tube-64.png"
+                alt="">
+            <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/facebook_online_social_media-64.png"
+                alt="">
+        </div>
+        <div class="big">
+            <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+            <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
